@@ -32,14 +32,14 @@ int main() {
     std::cerr << "elapsed time: " << elapsed_seconds.count() << "s\n";  
     
     //  media
-    double val2 = thrust::reduce(dev.begin(), dev.end());
-    double mean = val/2517
+    double val = thrust::reduce(dev.begin(), dev.end());
+    double mean = val/2517;
     std::cout << "media: " << mean << "\n";
 
     // media anual 
 
     double val2 = thrust::reduce(dev.begin()+2152, dev.end());
-    double mean2 = val2/356
+    double mean2 = val2/356;
     std::cout << "media ultimo ano: " << mean2 << "\n";
 
 
